@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>css</title>
+        <!--    连接定义css-->
+        <link rel="stylesheet" type="text/css" href="learn.css">
+
+    </head>
+    <body>
+<!--    内敛定义css-->
+
+        <div id="div1" style="background-color: blueviolet;
+             width:300px;
+             height:300px;
+             position: absolute;
+             top: 500px;
+             left: 100px;
+             border-style: solid;
+             border-width: 1px;
+             border-color: antiquewhite;">
+        </div>
+
+
+<!--    样式块定义css (固定写法）-->
+    <style type="text/css">
+        /*
+        新注释
+         */
+        div{
+            background-color: darkorange;
+            width: 100px;
+            height: 100px;
+            border-color: blueviolet;
+            border-style: solid;
+            border-width: 100px;
+
+        }
+        /*id选择器
+        #id()
+         */
+        #username{
+            width: 200px;
+            height: 60px;
+        }
+        /*类选择器
+            .class{}样式作用于当前网页中某一类标签
+         */
+        .student{
+            font-size: 12px;
+            color: red;
+        }
+
+    </style>
+    <div>
+    </div>
+
+<br><br><br>
+<!--    让样式作用于某一个标签，用id选择器-->
+    <input type="text" id="username">
+<br>
+<!--    class属性类选择器测试-->
+    <span class="student">文本内容</span>
+    <p class="student">文本内容2</p>
+<br><br><br><br><br><br>
+
+
+
+<!--    连接定义css-->
+    <div id="div2">
+
+    </div>
+    <input type="text" class="myinput">
+<input type="text"  id="username" class="myinput">
+    </body>
+</html>
